@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper
+		namespace="com.anj.test.connection.driveraccount.mapper.DriverAccountMapper">
+
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.anj.test.connection.driveraccount.domain.DriverAccount">
+		<id column="id" property="id"/>
+		<result column="driverInfoID" property="driverInfoID"/>
+		<result column="driverServiceType" property="driverServiceType"/>
+		<result column="score" property="score"/>
+		<result column="carNumber" property="carNumber"/>
+		<result column="name" property="name"/>
+		<result column="phone" property="phone"/>
+		<result column="limitLine" property="limitLine"/>
+		<result column="token" property="token"/>
+		<result column="companyID" property="companyID"/>
+		<result column="companyName" property="companyName"/>
+		<result column="transactionVolume" property="transactionVolume"/>
+		<result column="complaint" property="complaint"/>
+		<result column="driverStatus" property="driverStatus"/>
+		<result column="balance" property="balance"/>
+		<result column="photo" property="photo"/>
+		<result column="deviceType" property="deviceType"/>
+		<result column="appVersion" property="appVersion"/>
+		<result column="created" property="created"/>
+		<result column="cID" property="cID"/>
+		<result column="upLocationTime" property="upLocationTime"/>
+		<result column="upLng" property="upLng"/>
+		<result column="upLat" property="upLat"/>
+		<result column="tokenDeathTime" property="tokenDeathTime"/>
+	</resultMap>
+
+	<!-- 通用查询结果列 -->
+	<sql id="Base_Column_List">
+		id,
+		driverInfoID,
+		driverServiceType,
+		score,
+		carNumber,
+		name,
+		phone,
+		limitLine,
+		token,
+		companyID,
+		transactionVolume,
+		complaint,
+		driverStatus,
+		balance,
+		photo,
+		deviceType,
+		appVersion,
+		created,
+		cID,
+		companyName,
+		upLocationTime,
+		upLng,
+		upLat,
+		tokenDeathTime
+	</sql>
+</mapper>

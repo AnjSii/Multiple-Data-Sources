@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.anj.test.connection.orderinfo.mapper.OrderInfoMapper">
+	<resultMap id="BaseResultMap" type="com.anj.test.connection.orderinfo.domain.OrderInfo">
+		<id column="id" property="id"/>
+		<result column="orderNo" property="orderNo"/>
+		<result column="passengerID" property="passengerID"/>
+		<result column="passengerName" property="passengerName"/>
+		<result column="passengerPhone" property="passengerPhone"/>
+		<result column="showName" property="showName"/>
+		<result column="showPhone" property="showPhone"/>
+		<result column="channelType" property="channelType"/>
+		<result column="status" property="status"/>
+		<result column="driverID" property="driverID"/>
+		<result column="driverName" property="driverName"/>
+		<result column="driverPhone" property="driverPhone"/>
+		<result column="companyID" property="companyID"/>
+		<result column="companyName" property="companyName"/>
+		<result column="startAddress" property="startAddress"/>
+		<result column="startLat" property="startLat"/>
+		<result column="startLng" property="startLng"/>
+		<result column="endAddress" property="endAddress"/>
+		<result column="endLat" property="endLat"/>
+		<result column="endLng" property="endLng"/>
+		<result column="dirverCompanyId" property="dirverCompanyId"/>
+		<result column="driverCompanyName" property="driverCompanyName"/>
+		<result column="created" property="created"/>
+		<result column="serverTime" property="serverTime"/>
+		<result column="orderType" property="orderType"/>
+		<result column="orderServiceType" property="orderServiceType"/>
+		<result column="carServiceType" property="carServiceType"/>
+		<result column="payRuleID" property="payRuleID"/>
+		<result column="isDriverReview" property="isDriverReview"/>
+		<result column="isPassReview" property="isPassReview"/>
+		<result column="isSpecial" property="isSpecial"/>
+		<result column="cancelCause" property="cancelCause"/>
+		<result column="enterpriseID" property="enterpriseID"/>
+		<result column="lasturge" property="lasturge"/>
+		<result column="treatmentDate" property="treatmentDate"/>
+		<result column="finishTime" property="finishTime"/>
+		<result column="driverProfit" property="driverProfit"/>
+		<result column="companyProfit" property="companyProfit"/>
+		<result column="isReimburse" property="isReimburse"/>
+		<result column="virtualMobile" property="virtualMobile"/>
+		<result column="updated" property="updated"/>
+		<result column="passTime" property="passTime"/>
+	</resultMap>
+
+	<!-- 通用查询结果列 -->
+	<sql id="Base_Column_List">
+		id
+		,
+		orderNo,
+		passengerID,
+		passengerName,
+		passengerPhone,
+		showName,
+		showPhone,
+		channelType,
+		status,
+		driverID,
+		driverName,
+		driverPhone,
+		companyID,
+		companyName,
+		startAddress,
+		startLat,
+		startLng,
+		endAddress,
+		endLat,
+		endLng,
+		dirverCompanyId,
+		driverCompanyName,
+		created,
+		serverTime,
+		orderType,
+		orderServiceType,
+		carServiceType,
+		payRuleID,
+		isDriverReview,
+		isPassReview,
+		isSpecial,
+		cancelCause,
+		enterpriseID,
+		lasturge,
+		treatmentDate,
+		finishTime,
+		driverProfit,
+		companyProfit,
+		isReimburse,
+		virtualMobile,
+		updated,
+		passTime
+	</sql>
+</mapper>
